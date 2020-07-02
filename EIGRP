@@ -6,11 +6,3 @@ It has max hop count is 255 and 100 by default.
 Administrative distance is 90.
 Flixibilbe in design.
 It is Unicast and Multicast.
-
-
-Ant
-===
-
-Ant, simple animation demo.
-
-.. literalinclude:: ../freegames/ant.py
