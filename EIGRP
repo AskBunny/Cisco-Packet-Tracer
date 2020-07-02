@@ -1,8 +1,24 @@
 EIGRP 
-===
+====
 
 - This is an advanced distance vector and works on all the proprietory.
 - It has max hop count is 255 and 100 by default.
 - Administrative distance is 90.
 - Flixibilbe in design.
 - It is Unicast and Multicast.
+
+There are three kind of tables- (--Sending and Receiving Hello Messages--Updates--Calculating Best Route--).
+1. Neighbor Table: Each router introduces and share Hello message.
+2. Topology Table: Share routing information and build topology table which tells about the best route possible.
+3. Routing Table: Basis on best route possible, it creates routing table.
+
+Packet Tracer:
+
+1. Neighbor Table: Contains list of directly connected routers.
+#show ip egirp neighbor
+
+2. Topology Table: List of all best route possible learned from neighbor.
+#show ip egirp topology
+
+3. Routing Table: The best route to the destination.
+#show ip route
