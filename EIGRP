@@ -25,9 +25,13 @@ Packet Tracer:
 #show ip route
 
 - Updates are sent through Multicast.
-- Hello packets are sent every 5 seconds.
+- Hello packets are sent every 5 seconds and for 10 seconds in case doesn't receive any message.
 
 EIGRP Metric: BW + Delay + Load + MTU + Reliability
 Generally BW + Delay are used for calculation.
 BW doesn't sum all the bandwidths, just check which route has the lowest value of bandwidth.
 Lest Cost  = Best Route
+
+Configuring EIGRP:
+Router(config)# router eigrp <AS NO>   [AS NO: Any no between 1-65535, should be same one on both the routers in order to form neighborship]
+Router(config-router)# network <Network ID> [All directly connected Network]
