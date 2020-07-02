@@ -18,7 +18,16 @@ Packet Tracer:
 #show ip egirp neighbor
 
 2. Topology Table: List of all best route possible learned from neighbor.
+(Router shares the only best route possible irrespective of having multiple routes, this happens in EIGRP while in OSPF, router shares all the route possible.)
 #show ip egirp topology
 
 3. Routing Table: The best route to the destination.
 #show ip route
+
+- Updates are sent through Multicast.
+- Hello packets are sent every 5 seconds.
+
+EIGRP Metric: BW + Delay + Load + MTU + Reliability
+Generally BW + Delay are used for calculation.
+BW doesn't sum all the bandwidths, just check which route has the lowest value of bandwidth.
+Lest Cost  = Best Route
