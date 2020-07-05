@@ -1,5 +1,5 @@
-EIGRP 
-====
+Enhanced Interior Gateway Routing Protocol (EIGRP) 
+==================================================
 
 - This is an advanced distance vector and works on all the proprietory.
 - It has max hop count is 255 and 100 by default.
